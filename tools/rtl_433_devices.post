@@ -1,4 +1,10 @@
   /* Add new decoders here. */
+#elif defined(GH_DEVICES)
+/**
+ * Greenhouse project subset (hermandv/greenhouse): GH-Node plus the RainPoint OOK family.
+ */
+#define DEVICES                DECL(gh_node)                DECL(rainpoint)              DECL(rainpoint_hcs012arf)    DECL(baldr_rain)             DECL(baldr_hcs528arf)        /* Add new greenhouse decoders here. */
+  #define NUMOFDEVICES 5
 #else
 /**
  * Subset of devices that I have access to and have tested with
